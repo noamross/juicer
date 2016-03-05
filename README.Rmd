@@ -27,7 +27,7 @@ To install from github:
 
     devtools::install_github('noamross/juicer')
     
-Note that since this package uses V8, is has a system dependency of `libv8`. To quote from **V8**'s README:
+Note that since this package uses **V8**, is has a system dependency of `libv8`. To quote from **V8**'s README:
 
 > This package depends on libv8 around 3.14 or 3.16, which is the version included with most package managers:
 > 
