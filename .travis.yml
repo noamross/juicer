@@ -1,0 +1,18 @@
+language: r
+
+before_install:
+- sudo apt-get install libv8-dev
+
+r_packages:
+- httr
+- V8
+- covr
+- testthat
+
+after_success:
+- Rscript -e 'covr::codecov()'
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change

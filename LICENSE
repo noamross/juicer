@@ -1,0 +1,6 @@
+YEAR: 2016
+COPYRIGHT HOLDER: Noam Ross
+
+This package also contains a Browserified version of the "juice" node package
+and its dependencies. A list of dependencies and licenses are founds in
+`inst/node_packages.csv', with copies of licenses in `inst/LICENSES`.

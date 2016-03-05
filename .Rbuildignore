@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+Dockerfile
+^README\.Rmd$
+^README-.*\.png$
+^\.travis\.yml$
+^CONDUCT\.md$
+^inst/node_modules$
+^inst/node_modules/*\.*$
+^inst/in\.js$
