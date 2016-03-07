@@ -23,23 +23,26 @@ juice <- function(html, options = NULL, css = NULL) {
     stop("'html' must be a character vector of html text, a filenames, or urls")
 
   if (length(html) > 1 & is.null(css)) {
-    out <- unlist(Map(function(html) juice(html, options, css), html))
+    out <- unlist(Map(function(html)
+      juice(html, options, css), html))
     names(out) <- names(html)
     return(out)
-  } else if(length(html) > 1 & !is.null(css)) {
-    out <- unlist(Map(function(html, css) juice(html, options, css), html, css))
+  } else if (length(html) > 1 & !is.null(css)) {
+    out <-
+      unlist(Map(function(html, css)
+        juice(html, options, css), html, css))
     names(out) <- names(html)
     return(out)
   }
 
-  html = read(html)
-  ct = new_context()
+  html <- read(html)
+  ct <-  new_context()
   ct$source(system.file("juicer.js", package = "juicer"))
   ct$assign("html_text", html)
   ct$assign("options", options)
 
   if (!is.null(css)) {
-    css = read(css)
+    css <- read(css)
     ct$assign("css_text", css)
     ct$eval("var juiced = juice.inlineContent(html_text, css_text, options);")
   } else {

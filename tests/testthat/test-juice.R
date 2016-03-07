@@ -1,14 +1,19 @@
 context("juice")
 
-text_html = "<style>a {font-size:30;}</style><a href=\"http://ropensci.org\">ROpenSci</a>"
-text_css = "a {font-size:30;}"
+text_html <-
+  "<style>a {font-size:30;}</style><a href=\"http://ropensci.org\">ROpenSci</a>"
+text_css <- "a {font-size:30;}"
 
 test_that("juice works", {
-  expect_equal(juice(text_html), "<a href=\"http://ropensci.org\" style=\"font-size: 30;\">ROpenSci</a>")
+  expect_equal(
+    juice(text_html),
+               "<a href=\"http://ropensci.org\" style=\"font-size: 30;\">ROpenSci</a>")
   expect_equal(juice(text_html, css=text_css),
                "<style>a {font-size:30;}</style><a href=\"http://ropensci.org\" style=\"font-size: 30;\">ROpenSci</a>")
-  expect_equal(juice(text_html, options=list(applyStyleTags=FALSE)), "<a href=\"http://ropensci.org\">ROpenSci</a>")
-  expect_equal(juice(text_html, options=list(applyStyleTags=FALSE, removeStyleTags=FALSE)), text_html)
+  expect_equal(juice(text_html, options=list(applyStyleTags=FALSE)),
+               "<a href=\"http://ropensci.org\">ROpenSci</a>")
+  expect_equal(juice(text_html,
+          options=list(applyStyleTags=FALSE, removeStyleTags=FALSE)), text_html)
 })
 
 test_that("Multiple inputs", {
@@ -19,5 +24,6 @@ test_that("Multiple inputs", {
 })
 
 test_that("Expected failures", {
-  expect_error(juice(1), "'html' must be a character vector of html text, a filenames, or urls")
+  expect_error(juice(1),
+               "'html' must be a character vector of html text, a filenames, or urls")
 })
