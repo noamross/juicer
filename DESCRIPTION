@@ -4,10 +4,11 @@ Title: In-lining of HTML styling with juice.js
 Version: 0.1.0
 Author: Noam Ross
 Maintainer: Noam Ross <noam.ross@gmail.com>
-Description: The juicer package in-lines CSS into HTML files, allowing for
-  stand-alone HTML that can be used for services (e-mail, google docs) that
-  do not use CSS or style tags.
-SystemRequirements: 
+Description: The juicer package in-lines CSS into HTML files using the 'juice'
+  javascript package.  This allows for stand-alone HTML that can be used for
+  services (e-mail, Google Docs) that do not use CSS or style tags but allow
+  in-line HTML.
+SystemRequirements:
 URL: https://github.com/noamross/juicer
 BugReports: https://github.com/noamross/juicer/issues
 License: BSD_2_clause + file LICENSE

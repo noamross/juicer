@@ -49,7 +49,7 @@ passed to it as a string, file, or URL:
 
 ```{r}
 library(juicer)
-some_html = "<style>a {font-size:30;}</style><a href='http://www.ropensci.org'>ROpenSci</a>"
+some_html = "<style>a {font-size:30;}</style><a href=\"http://ropensci.org\">ROpenSci</a>"
 juice(some_html)
 ```
 
