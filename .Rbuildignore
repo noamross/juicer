@@ -8,3 +8,5 @@ Dockerfile
 ^inst/node_modules$
 ^inst/node_modules/*\.*$
 ^inst/in\.js$
+^appveyor\.yml$
+^\.gitattributes$

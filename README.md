@@ -1,5 +1,5 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis-CI Build Status](https://travis-ci.org/noamross/juicer.svg?branch=master)](https://travis-ci.org/noamross/juicer) [![codecov.io](https://codecov.io/github/noamross/juicer/coverage.svg?branch=master)](https://codecov.io/github/noamross/juicer?branch=master)
+[![Travis-CI Build Status](https://travis-ci.org/noamross/juicer.svg?branch=master)](https://travis-ci.org/noamross/juicer) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/noamross/juicer?branch=master&svg=true)](https://ci.appveyor.com/project/noamross/juicer) [![codecov.io](https://codecov.io/github/noamross/juicer/coverage.svg?branch=master)](https://codecov.io/github/noamross/juicer?branch=master)
 
 **juicer** is a small wrapper around the **[juice](https://github.com/Automattic/juice)** javascript library for in-lining styles in HTML. It is intended as a building block for applications such as generating stylized HTML reports from R Markdown that can be sent via e-mail or uploaded to Google Docs with styles intact.
 
