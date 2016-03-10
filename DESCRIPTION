@@ -14,6 +14,7 @@ BugReports: https://github.com/noamross/juicer/issues
 License: BSD_2_clause + file LICENSE
 Imports: V8,
   httr
+Suggests: testthat
 LazyData: TRUE
 RoxygenNote: 5.0.1
 Suggests: testthat
