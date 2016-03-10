@@ -11,3 +11,4 @@ Dockerfile
 ^inst/in\.js$
 ^appveyor\.yml$
 ^\.gitattributes$
+
