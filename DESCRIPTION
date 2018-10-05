@@ -16,5 +16,5 @@ Imports: V8,
   httr
 Suggests: testthat
 LazyData: TRUE
-RoxygenNote: 5.0.1
-Suggests: testthat
+RoxygenNote: 6.1.0
+Encoding: UTF-8

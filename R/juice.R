@@ -55,7 +55,7 @@ juice <- function(html, options = NULL, css = NULL) {
 #' @import httr
 read <- function(x) {
   if (file.exists(x)) {
-    readChar(x, file.info(x)$size)
+    paste0(readLines(x, encoding = "UTF-8"), collapse = "\n\r")
   } else if (!is.null(httr::parse_url(x)$scheme) &&
              identical(httr::status_code(httr::HEAD(x)), 200L)) {
     res <- httr::GET(x)
