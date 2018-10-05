@@ -21,10 +21,12 @@ This function an HTML file with \code{<style>} tags an in-lines the styles.
 It does not currently in-line styles from external files or resources automatically,
 though styles may be applied with the \code{css=} argument or \code{options=list(extraCss=)}
 }
+\details{
+\code{html} or \code{css} may be provided as vectors, which will be recycled.
+}
 \examples{
 some_html = "<style>a {font-size:30;}</style><a href='http://www.ropensci.org'>ROpenSci</a>"
 juice(some_html)
 # Don't apply style tags, but remove them
 juice(some_html, options=list(applyStyleTags=FALSE, removeStyleTags=TRUE))
 }
-
